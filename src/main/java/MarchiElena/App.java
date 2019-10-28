@@ -1,8 +1,11 @@
 package MarchiElena;
 
+/*
+    *data una stringa contenente lettere, che corrispondono ai colori della stampante, contare quanti errori, che si segnalano con "u, w, x, z", esistono in essa e sostituirli con gli *
+*/
 public class App {
     public static void main(String[] args) {
-        String s = "tpwaemuqxdmwqbqrjbeosjnejqorxdozsxnrgpgqkeihqwybzyymqeazfkyiucesxwutgszbenzvgxibxrlvmzihcb";
+        String s = "xuuzwww";
         System.out.println(hist(s));
     }
 
@@ -39,6 +42,7 @@ public class App {
             }
             ustr += "\r";
             ris += ustr;
+            System.out.println(ris);
         }
         if (w != 0) {
             String wstr = "";
@@ -48,6 +52,7 @@ public class App {
             }
             wstr += "\r";
             ris += wstr;
+            System.out.println(ris);
         }
         if (x != 0) {
             String xstr = "";
@@ -57,6 +62,7 @@ public class App {
             }
             xstr += "\r";
             ris += xstr;
+            System.out.println(ris);
         }
         if (z != 0) {
             String zstr = "";
@@ -66,6 +72,7 @@ public class App {
             }
             //zstr += "\n";
             ris += zstr;
+            System.out.println(ris);
         }
         return ris;
     }
